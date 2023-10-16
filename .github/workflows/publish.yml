@@ -40,5 +40,5 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: sskhan39/openrand_cpubench:v0,9
+          tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
